@@ -141,8 +141,14 @@ section.showcase{
    padding: 90px 2%;
 }
 
+section.showcase .container{
+   max-width: 1000px;
+   padding: 40px 0;
+}
+
+
 .title-line{
-   max-width: 800px;
+   max-width: 1000px;
    margin: 0 auto ;
    position: relative;
    text-align: center;
@@ -156,7 +162,7 @@ section.showcase{
    background-color: #000;
 }
 
-section.showcase h2{
+section.showcase .title-line > h2{
    font-size: 24px;
    font-style: italic;
    position: relative;
@@ -166,6 +172,49 @@ section.showcase h2{
    padding: 0 25px;
 }
 
+.main-showcase{
+   float: left;
+   width: 33.3%;
+}
+
+.main-showcase .car-img{
+   width: 100%;
+   padding-top: 100%;
+   border: 8px solid #fff;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.main-showcase h2{
+   font-size: 22px;
+   padding-left: 8px;
+   color: #000;
+   font-style: italic;
+   font-weight: bold;
+}
+
+.main-showcase p{
+   font-size: 15px;
+   padding-left: 8px;
+   color: #353535;
+   font-style: italic;
+   padding-top: 8px;
+}
+
+.main-showcase a{
+   margin-left: 8px;
+   color: #FFF;
+   background-color: #ed2d2d;
+   font-style: italic;
+   width: 125px;
+   text-align: center;
+   display: block;
+   line-height: 40px;
+   text-decoration: none;
+   margin-top: 10px;
+   border-bottom: 4px solid #b21e1e;
+}
 
 
 
@@ -220,6 +269,25 @@ section.showcase h2{
    }
 }
 
+@media screen and (max-width: 886px){
+   section.showcase .container{
+      max-width: 1000px;
+      padding: 40px 0;
+      text-align: center;
+   }
+
+   .main-showcase{
+      display: inline-block;
+      float: none;
+      width: 70%;
+      margin-top: 20px;
+   }
+
+   .main-showcase a{
+      display: inline-block;
+   }
+}
+
 @media screen and (max-width: 790px){
    nav.desktop{
       display: none;
@@ -230,12 +298,18 @@ section.showcase h2{
    }
 }
 
+
 @media screen and (max-width: 580px){
    .text-banner{
-      padding: 30px;
+      padding: 50px;
    }
 
    .text-banner-single{
       font-size: 18px;
    }
+
+   section.showcase .title-line > h2{
+      font-size: 22px;
+   }
+   
 }
