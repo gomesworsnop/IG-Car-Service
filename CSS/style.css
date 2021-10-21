@@ -202,21 +202,105 @@ section.showcase .title-line > h2{
    padding-top: 8px;
 }
 
-.main-showcase a{
-   margin-left: 8px;
+.btn-1{
    color: #FFF;
-   background-color: #ed2d2d;
-   font-style: italic;
    width: 125px;
-   text-align: center;
    display: block;
+   font-size: 16px;
    line-height: 40px;
+   font-style: italic;
+   text-align: center;
    text-decoration: none;
-   margin-top: 10px;
+   background-color: #ed2d2d;
    border-bottom: 4px solid #b21e1e;
 }
 
+.main-showcase a{
+   margin-top: 10px;
+   margin-left: 8px;
+}
 
+.services-desc{
+   display: flex;
+}
+
+.half1{
+   width: 50%;
+   padding: 90px 0;
+   background-color: #242424;
+   color: #fff;
+   text-align: center;
+}
+
+.half1-wraper{
+   text-align: left;
+   display: inline-block;
+}
+
+.half1-wraper h2{
+   font-weight: normal;
+   font-style: italic;
+   font-size: 28px;
+}
+
+.half1-wraper ul{
+   display: inline-block;
+   margin-top: 18px;
+}
+
+.half1-wraper li{
+   margin-left: 15px;
+}
+
+.half1-wraper a{
+   margin-left: 40px;
+   display: inline-block;
+   vertical-align: bottom;
+}
+
+.half2{
+   width: 50%;
+   padding: 90px 100px;
+   background-color: #ed2d2d;
+   color: #fff;
+}
+
+.half2 h2{
+   font-weight: normal;
+   font-style: italic;
+   font-size: 28px;
+}
+
+.half2 .comments-single{
+   margin-top: 15px;
+}
+
+.comments-single p{
+   font-size: 18px;
+}
+
+.navigation{
+   float: left;
+   width: 100%;
+   max-width: 700px;
+   margin-top: 30px;
+}
+
+.arrows{
+   float: left;
+}
+
+.navigation img{
+   cursor: pointer;
+   margin: 0 15px;
+}
+
+.name-people{
+   float: right;
+   color: #252525;
+   font-size: 23px;
+   font-weight: bold;
+}
 
 
 
@@ -286,9 +370,27 @@ section.showcase .title-line > h2{
    .main-showcase a{
       display: inline-block;
    }
+   
 }
 
 @media screen and (max-width: 790px){
+   section.services-desc{
+      flex-direction: column;
+   }
+
+   .half1{
+      text-align: center;
+   }
+
+   .half1-wraper{
+      padding: 0;
+   }
+
+   .half1,.half2{
+      padding: 80px 5%;
+      width: 100%;
+   }
+
    nav.desktop{
       display: none;
    }
@@ -296,6 +398,14 @@ section.showcase .title-line > h2{
    header nav.mobile{
       display: block;
    }
+
+   .half1-wraper a{
+      display: block;
+      margin-left: 0;
+      margin-top: 15px;
+   }
+
+
 }
 
 
