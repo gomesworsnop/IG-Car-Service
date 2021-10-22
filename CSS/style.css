@@ -385,10 +385,111 @@ footer p{
 }
 
 
+section.sales{
+   padding: 90px 0;
+   min-height: 90%;
+}
 
+.content-sales{
+   margin-top: 40px;
+}
 
+.sidebar{
+   float: left;
+   width: 30%;
+}
 
+.search1{
+   width: 300px;
+}
 
+.search1 h2{
+   font-size: 24px;
+   color: #000;
+   font-weight: normal;
+}
+
+.search1 .price-bar{
+   width: 100%;
+   height: 20px;
+   margin-top: 8px;
+   position: relative;
+   border-radius: 20px;
+   border: 1px solid #ccc;
+}
+
+.price-bar-fill{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 30%;
+   height: 20px;
+   border-radius: 20px;
+   background-color: #ed2d2d;
+}
+
+.pointer-bar{
+   width: 30px;
+   height: 30px;
+   border-radius: 10px;
+   left: calc(30% - 15px);
+   top: -5px;
+   border: 1px solid #000;
+   position: absolute;
+   cursor: pointer;
+   background: #b21e1e;
+}
+
+.search-price{
+   margin-top: 8px;
+}
+
+.search-price p{
+   color: #000;
+   font-size: 18px;
+}
+
+.search-price p:nth-of-type(1){
+   float: left;
+}
+
+.search-price p:nth-of-type(2){
+   float: right;
+}
+
+.search2{
+   margin-top: 40px;
+}
+
+.search2 h2{
+   font-size: 24px;
+   color: #000;
+   font-weight: normal;
+}
+
+.form-wraper-seles{
+   margin-top: 5px;
+}
+
+.form-wraper-seles input[type=checkbox]{
+   display: none;
+}
+
+.form-wraper-seles label{
+   width: 20px;
+   height: 20px;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   vertical-align: top;
+   cursor: pointer;
+}
+
+.form-wraper-seles span{
+   padding: 0 10px;
+   display: inline-block;
+   vertical-align: top;
+}
 
 
 
