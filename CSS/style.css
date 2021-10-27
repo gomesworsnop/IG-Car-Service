@@ -397,10 +397,11 @@ section.sales{
 .sidebar{
    float: left;
    width: 30%;
+   padding: 20px;
 }
 
 .search1{
-   width: 300px;
+   width: 90%;
 }
 
 .search1 h2{
@@ -425,7 +426,7 @@ section.sales{
    width: 30%;
    height: 20px;
    border-radius: 20px;
-   background-color: #ed2d2d;
+   background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(200, 200, 200));
 }
 
 .pointer-bar{
@@ -434,10 +435,10 @@ section.sales{
    border-radius: 10px;
    left: calc(30% - 15px);
    top: -5px;
-   border: 1px solid #000;
+   border: 1px solid #777;
    position: absolute;
    cursor: pointer;
-   background: #b21e1e;
+   background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(180, 180, 180));
 }
 
 .search-price{
@@ -483,6 +484,22 @@ section.sales{
    border-radius: 3px;
    vertical-align: top;
    cursor: pointer;
+   position: relative;
+}
+
+.circle{
+   display: none;
+   width: 8px;
+   height: 8px;
+   border-radius: 4px;
+   background: #000;
+   position: absolute;
+   top: 6px;
+   left: 6px;
+}
+
+.form-wraper-seles input[type=checkbox]:checked + label > .circle{
+   display: block;
 }
 
 .form-wraper-seles span{
@@ -491,8 +508,16 @@ section.sales{
    vertical-align: top;
 }
 
+.showcase-sales{
+   float: left;
+   width: 70%;
+   margin-top: 40px;
+   padding: 0% 2%;
+}
 
-
+.showcase-sales .main-showcase{
+   margin-top: 20px;
+}
 
 
 
@@ -548,6 +573,25 @@ section.sales{
 
    .main-showcase a{
       display: inline-block;
+   }
+
+   .sidebar{
+      text-align: center;
+      width: 100%;
+   }
+
+   .search1{
+      display: inline-block;
+   }
+
+   .search2{
+      display: inline-block;
+      text-align: left;
+   }
+
+   .showcase-sales{
+      text-align: center;
+      width: 100%;
    }
    
 }
